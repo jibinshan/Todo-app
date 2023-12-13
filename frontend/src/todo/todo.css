@@ -1,0 +1,17 @@
+.Todo-container{
+    width: 500px;
+    height: 600px;
+    background-color: #152238;
+    box-shadow: 10px 10px black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 25px;
+
+}
+.Todo-container h1{
+    color: rgb(142, 169, 192);
+    padding-left: 160px;
+    font-size: 40px;
+}
