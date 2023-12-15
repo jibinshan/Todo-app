@@ -9,7 +9,7 @@ function Todo() {
     
     const [todo,setTodo] = useState('')
     const [todos,setTodos] = useState([])
-    const api = "https://todo-app-server-jibinshans-projects.vercel.app/todo"
+    const api = "http://localhost:2024/todo"
     const fetchdata = async()=>{
        const response = await axios(api)
        setTodos(response.data)

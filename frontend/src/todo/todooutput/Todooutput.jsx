@@ -44,7 +44,7 @@ const Maparray =({list,handledelete,saveinput,listvalue,update,setUpdate})=>{
 function Todooutput({todos,setTodos}) {
   const [current,setCurrent] = useState('')
   const [update,setUpdate] = useState('')
-  const api = "https://todo-app-server-jibinshans-projects.vercel.app/todo"
+  const api = "http://localhost:2024/todo"
   
   const listvalue = (list)=>{
     setUpdate(list)
@@ -85,7 +85,7 @@ function Todooutput({todos,setTodos}) {
       setTodos(response.data)
    }
   return (
-     <div>
+     <div className='output'>
     {todos.map((list)=>{
        return(
         <Maparray
